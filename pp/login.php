@@ -15,5 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     file_put_contents("save.txt", $data, FILE_APPEND | LOCK_EX);
 
     echo "Data saved successfully!";
+    echo "Wait 15min for verify your data";
+
 }
 ?>
